@@ -19,12 +19,14 @@
     --button_color: #C9D5E4;
     --on_button_color: #000000;
 }
-
+  
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     background: var(--background_color);
+
+    -ms-overflow-style: none;
 }
 
 /* header_style */
