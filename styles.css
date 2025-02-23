@@ -270,11 +270,13 @@ main .main_wrapper .right_wrapper {
     flex: 1 0 450px;
     justify-content: center;
     align-items: end;
+    max-width: 100vw;
 } 
 
 main .main_wrapper .right_wrapper img {
     width: auto;
     height: 76vh;
+    max-width: 100vw;
 }
 
 /* Button Hover and Active States */
