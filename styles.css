@@ -19,6 +19,14 @@
     --button_color: #C9D5E4;
     --on_button_color: #000000;
 }
+
+::-webkit-scrollbar {
+    display: none;  
+}
+  
+html {
+    scrollbar-width: none;
+}
   
 body {
     min-height: 100vh;
