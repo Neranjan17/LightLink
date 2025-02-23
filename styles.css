@@ -1,6 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
 
 * {
     margin: 0;
@@ -13,31 +11,31 @@
 
 :root {
     --background_color: #212428;
-    --primery_text_color: #FFFFFF;
-    --secondery_text_color: #A7B1BE;
-    --teraddery_text_color: #FF014F;
+    --primary_text_color: #FFFFFF;
+    --secondary_text_color: #A7B1BE;
+    --tertiary_text_color: #FF014F;
     --button_color: #C9D5E4;
     --on_button_color: #000000;
 }
 
+/* Scrollbar Styles */
 ::-webkit-scrollbar {
     display: none;  
 }
-  
 html {
     scrollbar-width: none;
 }
-  
+
+/* Body Styles */
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     background: var(--background_color);
-
     -ms-overflow-style: none;
 }
 
-/* header_style */
+/* Header Styles */
 header {
     display: flex;
     justify-content: space-between;
@@ -63,9 +61,7 @@ header .header_icon img {
     cursor: pointer;
 }
 
-
-
-/* main_style */
+/* Main Content */
 main {
     display: flex;
     flex-direction: column;
@@ -73,14 +69,13 @@ main {
     width: 100%;
 }
 
-
-/* banner_style */
+/* Banner Section */
 main .banner_wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    color: var(--primery_text_color);
+    color: var(--primary_text_color);
     text-align: center;
 }
 
@@ -92,8 +87,7 @@ main .banner_wrapper h2 {
     font-size: 1.4rem;
 }
 
-
-/* main_content */
+/* Main Wrapper */
 main .main_wrapper {
     display: flex;
     flex-grow: 1;
@@ -101,6 +95,7 @@ main .main_wrapper {
     flex-wrap: wrap-reverse;
 }
 
+/* Left Wrapper */
 main .main_wrapper .left_wrapper {
     display: flex;
     flex-direction: column;
@@ -115,7 +110,7 @@ main .main_wrapper .left_wrapper .text_wrapper {
     gap: 48px;
 }
 
-/* left wrapper header */
+/* Header Wrapper */
 main .main_wrapper .left_wrapper .text_wrapper .header_wrapper {
     display: flex;
     width: 100%;
@@ -125,10 +120,10 @@ main .main_wrapper .left_wrapper .text_wrapper .header_wrapper {
 
 main .main_wrapper .left_wrapper .text_wrapper .header_wrapper img {
     height: 100%;
-    width: auto
+    width: auto;
 }
 
-/* set text styles */
+/* Header Texts */
 main .main_wrapper .left_wrapper .text_wrapper .header_wrapper .header_texts {
     display: flex;
     flex-direction: column;
@@ -137,9 +132,10 @@ main .main_wrapper .left_wrapper .text_wrapper .header_wrapper .header_texts {
 
 main .main_wrapper .left_wrapper .text_wrapper .header_wrapper .header_texts h3 {
     font-size: 1.4rem;
-    color: var(--primery_text_color);
+    color: var(--primary_text_color);
 }
 
+/* Guest Name Wrapper */
 main .main_wrapper .left_wrapper .text_wrapper .header_wrapper .header_texts .guest_name_wrapper {
     display: flex;
     gap: 0.5rem;
@@ -147,15 +143,15 @@ main .main_wrapper .left_wrapper .text_wrapper .header_wrapper .header_texts .gu
 
 main .main_wrapper .left_wrapper .text_wrapper .header_wrapper .header_texts .guest_name_wrapper .title {
     font-size: 2.2rem;
-    color: var(--primery_text_color);
+    color: var(--primary_text_color);
 }
 
 main .main_wrapper .left_wrapper .text_wrapper .header_wrapper .header_texts .guest_name_wrapper .name {
     font-size: 2.2rem;
-    color: var(--teraddery_text_color);
+    color: var(--tertiary_text_color);
 }
 
-/* set middle styles */
+/* Middle Wrapper */
 main .main_wrapper .left_wrapper .text_wrapper .middle_wrapper {
     display: flex;
     align-items: end;
@@ -165,7 +161,7 @@ main .main_wrapper .left_wrapper .text_wrapper .middle_wrapper {
 
 main .main_wrapper .left_wrapper .text_wrapper .middle_wrapper p {
     font-size: 1.1rem;
-    color: var(--secondery_text_color);
+    color: var(--secondary_text_color);
 }
 
 main .main_wrapper .left_wrapper .text_wrapper .middle_wrapper img {
@@ -174,7 +170,7 @@ main .main_wrapper .left_wrapper .text_wrapper .middle_wrapper img {
     cursor: pointer;
 }
 
-/* button wrapper */
+/* Button Wrapper */
 main .main_wrapper .left_wrapper .button_wrapper {
     display: flex;
     width: 100%;
@@ -189,7 +185,7 @@ main .main_wrapper .left_wrapper .button_wrapper button {
     border-radius: 8px;
     border: none;
     height: 50px;
-    cursor: pointer
+    cursor: pointer;
 }
 
 main .main_wrapper .left_wrapper .button_wrapper .back_btn {
@@ -207,7 +203,7 @@ main .main_wrapper .left_wrapper .button_wrapper .light_btn {
     font-size: 1.4rem;
 }
 
-/* lamp view image style */
+/* Right Wrapper (Lamp View Image) */
 main .main_wrapper .right_wrapper {
     display: flex;
     flex: 1 0 450px;
@@ -220,37 +216,15 @@ main .main_wrapper .right_wrapper img {
     height: 76vh;
 }
 
-
-
-
-
-
-@media only screen and (max-width: 750px) {
-    body {
-      background-color: lightblue;
-    }
-}
-
-
-
-
-
-
-
-
-
+/* Button Hover and Active States */
 main .main_wrapper .left_wrapper .button_wrapper button:hover {
-    background: var(--teraddery_text_color);
-    color: var(--primery_text_color);
+    background: var(--tertiary_text_color);
+    color: var(--primary_text_color);
     transition: background 0.3s ease, color 0.3s ease;
 }
 
 main .main_wrapper .left_wrapper .button_wrapper button:active {
     transform: scale(0.95);
-    background: var(--teraddery_text_color);
-    color: var(--primery_text_color);
+    background: var(--tertiary_text_color);
+    color: var(--primary_text_color);
 }
-
-
-
-
