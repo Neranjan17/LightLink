@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -202,9 +206,25 @@ main .main_wrapper .right_wrapper {
 } 
 
 main .main_wrapper .right_wrapper img {
-    width: 60%;
-    height: auto;
+    width: auto;
+    height: 76vh;
 }
+
+
+
+
+
+
+@media only screen and (max-width: 750px) {
+    body {
+      background-color: lightblue;
+    }
+}
+
+
+
+
+
 
 
 
@@ -220,3 +240,7 @@ main .main_wrapper .left_wrapper .button_wrapper button:active {
     background: var(--teraddery_text_color);
     color: var(--primery_text_color);
 }
+
+
+
+
