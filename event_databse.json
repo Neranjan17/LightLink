@@ -1,0 +1,54 @@
+{
+
+    "current_lights": 0,
+
+    "event_header_top" : "Welcome to the",
+    "event_header_bottom" : "Lamp Lighting Feature",
+    
+    "background_sound_url" : "assets/background_sound.mp3",
+
+    "guests": [
+        {
+            "name": "Aruna perera",
+            "title": "Mr",
+            "is_light": false,
+            "pic_url" : "assets/default_guest_pic.svg"
+        },
+
+        {
+            "name": "Kaml mendis",
+            "title": "Prof",
+            "is_light": false,
+            "pic_url" : "assets/default_guest_pic.svg"
+        },
+
+        {
+            "name": "M. K. Silwa",
+            "title": "Mr",
+            "is_light": false,
+            "pic_url" : "assets/default_guest_pic.svg"
+        },
+
+        {
+            "name": "Lalitha",
+            "title": "Ms",
+            "is_light": false,
+            "pic_url" : "assets/default_guest_pic.svg"
+        },
+  
+        {
+            "name": "A. R. Ariyadasa",
+            "title": "Mr",
+            "is_light": false,
+            "pic_url" : "assets/default_guest_pic.svg"
+        },
+  
+        {
+            "name": "D. J. Vijitha",
+            "title": "Dr",
+            "is_light": false,
+            "pic_url" : "assets/default_guest_pic.svg"
+        }
+    ]
+
+}

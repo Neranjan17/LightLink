@@ -13,10 +13,9 @@
     <header>
         
         <img src="assets/wed_logo.svg" alt="lampView">
-        <div class="header_icon">
+        <button class="sound_btn" id="header_sound_btn">
             <img src="assets/mute.svg" alt="sound">
-            <img src="assets/setup.svg" alt="setup">
-        </div>
+        </button>
 
     </header>
 
@@ -37,32 +36,34 @@
 
                 <div class="text_wrapper">
                     <div class="header_wrapper">
-                        <img src="assets/default_guest_pic.svg" alt="guest_pic">
+                        <img src="assets/default_guest_pic.svg" id="guest_pic_view" alt="guest_pic">
                         <div class="header_texts">
                             <h3>Welcome</h3>
                             <div class="guest_name_wrapper">
-                                <h2 class="title">Mr,</h2>
-                                <h2 class="name">Jone lee</h2>
+                                <h2 id="guest_title_text" class="title">Mr,</h2>
+                                <h2 id="guest_name_text" class="name">John Doe</h2>
                             </div>
                         </div> 
                     </div>
     
                     <div class="middle_wrapper">
                         <p>Please join us in lighting the lamp by clicking  the button below</p>
-                        <img src="assets/skip.svg" alt="skip">
+                        <button id="skip_guest_btn">
+                            <img src="assets/skip.svg" alt="skip">
+                        </button>
                     </div>
                 </div> 
 
                 <div class="button_wrapper">
-                    <button class="back_btn" id="backLampBtn">
+                    <button class="back_btn" id="back_lamp_btn">
                         <img src="assets/back_icon.svg" alt="back">
                     </button>
-                    <button class="light_btn" id="lightLampBtn">
+                    <button class="light_btn" id="light_lamp_btn">
                         Light the lamp
                     </button>
                 </div>
 
-                <div class="overlay_wrapper">
+                <div class="overlay_wrapper" id="start_div_panel">
                     <div class="text_wrapper">
                         <h1>
                             Welcome
@@ -74,11 +75,11 @@
                     </div> 
 
                     <div class="button_wrapper">
-                        <button class="sound_btn">
+                        <button class="sound_btn" id="start_sound_btn">
                             <img src="assets/mute.svg" alt="sound">
                         </button>
-                        <button class="start_btn">
-                            Start
+                        <button class="start_btn" id="start_event_btn">
+                            Start Event
                         </button>
                     </div>
                 </div>
@@ -86,14 +87,14 @@
             </div>
 
             <div class="right_wrapper">
-                <img src="assets/OilLamp_9.gif" id="lampView" accesskey="lamp_view">
+                <img src="assets/OilLamp_9.gif" id="lamp_view" accesskey="lamp_view">
             </div>
 
         </div>
 
     </main>
     
-    <script src="script.js"></script>
+    <script src="scripts/main_script.js"></script>
 
 </body>
 </html>

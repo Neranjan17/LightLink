@@ -50,14 +50,15 @@ header img {
     cursor: pointer;
 }
 
-header .header_icon {
+header .sound_btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90px;
+    background: transparent;
+    border: none;
 }
 
-header .header_icon img {
+header .sound_btn img {
     width: 24px;
     cursor: pointer;
 }
@@ -182,6 +183,7 @@ main .main_wrapper .left_wrapper .text_wrapper .header_wrapper {
 main .main_wrapper .left_wrapper .text_wrapper .header_wrapper img {
     height: 100%;
     width: auto;
+    border-radius: 50%;
 }
 
 /* Header Texts */
@@ -225,9 +227,16 @@ main .main_wrapper .left_wrapper .text_wrapper .middle_wrapper p {
     color: var(--secondary_text_color);
 }
 
-main .main_wrapper .left_wrapper .text_wrapper .middle_wrapper img {
-    height: 50%;
-    width: auto;
+main .main_wrapper .left_wrapper .text_wrapper .middle_wrapper button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+}
+
+main .main_wrapper .left_wrapper .text_wrapper .middle_wrapper button img {
+    height: 24px;
     cursor: pointer;
 }
 
@@ -270,13 +279,11 @@ main .main_wrapper .right_wrapper {
     flex: 1 0 450px;
     justify-content: center;
     align-items: end;
-    max-width: 100vw;
 } 
 
 main .main_wrapper .right_wrapper img {
     width: auto;
     height: 76vh;
-    max-width: 100vw;
 }
 
 /* Button Hover and Active States */
